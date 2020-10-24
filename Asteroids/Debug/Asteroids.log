@@ -1,0 +1,48 @@
+﻿  Asteroid.cpp
+  AsteroidWave.cpp
+  Boardrig.cpp
+  Bullet.cpp
+  Coin.cpp
+  CoinWave.cpp
+  Collider.cpp
+  Config.cpp
+  CorpseObject.cpp
+D:\C++\Asteroids\Asteroids\Asteroid.cpp(7,31): warning C4305:  'initializing': truncation from 'double' to 'const float'
+  DualLaser.cpp
+  EnemyLibrary.cpp
+  EnemySpawner.cpp
+D:\C++\Asteroids\Asteroids\CorpseObject.cpp(25,21): warning C4018:  '<': signed/unsigned mismatch
+  EnemyWave.cpp
+  ExplosionParticle.cpp
+D:\C++\Asteroids\Asteroids\EnemySpawner.cpp(16,20): warning C4018:  '<': signed/unsigned mismatch
+D:\C++\Asteroids\Asteroids\ExplosionParticle.cpp(19,47): warning C4244:  'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+D:\C++\Asteroids\Asteroids\ExplosionParticle.cpp(38,36): warning C4305:  'argument': truncation from 'double' to 'float'
+  Game.cpp
+  GameObject.cpp
+  GameParameters.cpp
+  Hud.cpp
+  Invader.cpp
+D:\C++\Asteroids\Asteroids\ExplosionParticle.cpp(40,43): warning C4305:  'argument': truncation from 'double' to 'float'
+  InvaderLaser.cpp
+  Generating Code...
+D:\C++\Asteroids\Asteroids\Invader.cpp(11,31): warning C4305:  'initializing': truncation from 'double' to 'const float'
+  Compiling...
+  InvaderWave.cpp
+  PlayerObject.cpp
+D:\C++\Asteroids\Asteroids\Hud.cpp(19): warning C4715:  'GetDifficultyString': not all control paths return a value
+  StateDifficultySelection.cpp
+D:\C++\Asteroids\Asteroids\PlayerObject.cpp(9,31): warning C4305:  'initializing': truncation from 'double' to 'const float'
+D:\C++\Asteroids\Asteroids\StateDifficultySelection.cpp(64,21): warning C4018:  '>=': signed/unsigned mismatch
+  StateGame.cpp
+D:\C++\Asteroids\Asteroids\StateDifficultySelection.cpp(70,21): warning C4018:  '<': signed/unsigned mismatch
+  StateMainMenu.cpp
+D:\C++\Asteroids\Asteroids\StateGame.cpp(36,20): warning C4018:  '<': signed/unsigned mismatch
+D:\C++\Asteroids\Asteroids\StateMainMenu.cpp(92,21): warning C4018:  '>=': signed/unsigned mismatch
+  StatePostGame.cpp
+  Strings.cpp
+  Unitrig.cpp
+  Weapon.cpp
+  main.cpp
+  Generating Code...
+D:\C++\Asteroids\Asteroids\StateMainMenu.cpp(97,21): warning C4018:  '<': signed/unsigned mismatch
+  Asteroids.vcxproj -> D:\C++\Asteroids\Asteroids\Debug\Asteroids.exe

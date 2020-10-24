@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\sim">
+      <UniqueIdentifier>{e8977729-bf05-47e1-8a2b-87405e918faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client">
+      <UniqueIdentifier>{508c8ddb-8ed5-41a0-84a7-4591c0f28507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim">
+      <UniqueIdentifier>{995b5363-53ee-417d-95a6-7cff366fa276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client">
+      <UniqueIdentifier>{78a36985-dc7b-4651-8d09-25847caf4932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\modules">
+      <UniqueIdentifier>{40ceddf0-ae48-4462-8d11-230965db98d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\modules">
+      <UniqueIdentifier>{79235bbf-9295-4fc8-9d48-f3c5f4085b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim\waves">
+      <UniqueIdentifier>{754e36a0-7c52-4fe2-9dd2-2dc145787041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim\waves">
+      <UniqueIdentifier>{e014e07b-5c9e-4a24-98ec-da962334df2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client\states">
+      <UniqueIdentifier>{d179d019-849c-4fe1-8ab0-cfb4f24a3f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\states">
+      <UniqueIdentifier>{15d1f4a2-92be-46d7-861f-b8bc08a9167b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim\units">
+      <UniqueIdentifier>{21e7db08-af09-4585-9d36-fc01b8741148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim\units">
+      <UniqueIdentifier>{dd38c0a2-2361-4286-a7a5-960811e5b7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim\factions">
+      <UniqueIdentifier>{e6759e78-0905-4dd7-abde-a7e614a91a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim\factions">
+      <UniqueIdentifier>{099afd7a-2839-4422-8797-54946d28f488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim\weapons">
+      <UniqueIdentifier>{34417feb-24a1-49c6-8295-949f819f095e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim\weapons">
+      <UniqueIdentifier>{e1146db6-31eb-45ee-8081-6ef23e1560f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim\ai">
+      <UniqueIdentifier>{928a134c-6a63-40cd-98b3-541dcda9ccbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim\ai">
+      <UniqueIdentifier>{492ceda3-94f4-45ad-828b-17cbfe9c1b68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Boardrig.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="Unitrig.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyLibrary.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyWave.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+    <ClCompile Include="AsteroidWave.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+    <ClCompile Include="SimEvent.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Rand.cpp">
+      <Filter>Source Files\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="GameParameters.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="CoinWave.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGame.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="StatePostGame.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Asteroid.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerObject.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="CorpseObject.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawner.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplosionParticle.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMainMenu.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Strings.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="StateDifficultySelection.cpp">
+      <Filter>Source Files\client\states</Filter>
+    </ClCompile>
+    <ClCompile Include="Faction.cpp">
+      <Filter>Source Files\sim\factions</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\sim\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="DualLaser.cpp">
+      <Filter>Source Files\sim\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="InvaderLaser.cpp">
+      <Filter>Source Files\sim\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Invader.cpp">
+      <Filter>Source Files\sim\units</Filter>
+    </ClCompile>
+    <ClCompile Include="Brain.cpp">
+      <Filter>Source Files\sim\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="InvaderWave.cpp">
+      <Filter>Source Files\sim\waves</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Boardrig.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="Unitrig.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyLibrary.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyWave.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+    <ClInclude Include="RigType.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="SimEvent.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="AsteroidWave.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+    <ClInclude Include="Rand.h">
+      <Filter>Header Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="GameParameters.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinWave.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGame.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="StatePostGame.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Asteroid.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerObject.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="CorpseObject.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawner.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplosionParticle.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMainMenu.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Strings.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="StateDifficultySelection.h">
+      <Filter>Header Files\client\states</Filter>
+    </ClInclude>
+    <ClInclude Include="Faction.h">
+      <Filter>Header Files\sim\factions</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\sim\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="InvaderLaser.h">
+      <Filter>Header Files\sim\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="DualLaser.h">
+      <Filter>Header Files\sim\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Invader.h">
+      <Filter>Header Files\sim\units</Filter>
+    </ClInclude>
+    <ClInclude Include="Brain.h">
+      <Filter>Header Files\sim\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="InvaderWave.h">
+      <Filter>Header Files\sim\waves</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
