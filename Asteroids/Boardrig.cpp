@@ -7,6 +7,7 @@
 #include "SimEvent.h"
 #include "Config.h"
 #include "GameObject.h"
+#include "StateManager.h"
 #include "RigType.h"
 
 #define RAD_TO_DEG static_cast<float>(57.295779513)
@@ -23,6 +24,7 @@ client::Boardrig::Boardrig(sf::RenderWindow* _window, sim::Game* _sim) : window(
 	_bg = new sf::Sprite(*getTexture("Sprites/Bg.png"));
 
 	Input::RegisterListener(this, sf::Keyboard::H);
+	Input::RegisterListener(this, sf::Keyboard::T);
 }
 
 client::Boardrig::~Boardrig() {
@@ -57,6 +59,12 @@ void client::Boardrig::onSimEvent(const SimEvent ev) {
 void client::Boardrig::onKeyPressed(sf::Keyboard::Key key) {
 	if (key == sf::Keyboard::H) {
 		_debugging = !_debugging;
+	} else if (key == sf::Keyboard::T) {
+		if (StateManager::GetTimeScale() == 1) {
+			StateManager::SetTimeScale(0.1f);
+		} else {
+			StateManager::SetTimeScale(1);
+		}
 	}
 }
 

@@ -32,5 +32,7 @@ namespace StateManager
 	/// Master loop, handling all game logic and rendering.
 	/// </summary>
 	void MainLoop();
+	void SetTimeScale(float f);
+	float GetTimeScale();
 };
 

@@ -54,7 +54,7 @@ namespace sim {
 		/// Spin angular momentum to add to the other object. Not to be confused with total angular momentum, which is conserved, while spin might not be.
 		/// </summary>
 		float otherSpin = 0;
-		Collision Collision::operator-() const;
+		Collision operator-() const;
 		Collision(bool isCollision = false, bool isPhysicsCollision = false, bool isKinetic = false, float horizontalSpeed = 0, float verticalSpeed = 0, float otherHorizontalSpeed = 0, float otherVerticalSpeed = 0, float horizontalDisplacement = 0, float verticalDisplacement = 0, float otherHorizontalDisplacement = 0, float otherVerticalDisplacement = 0, float spin = 0, float otherSpin = 0);
 	};
 }

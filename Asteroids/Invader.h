@@ -1,6 +1,7 @@
 #pragma once
 #include "GameObject.h"
 #include "Weapon.h"
+#include <vector>
 
 namespace sim {
 	class Invader :
@@ -12,9 +13,11 @@ namespace sim {
 		void Kill() override;
 		Invader(int id, Game* sim);
 		Weapon* weapon;
+		std::vector<float>* aiForces;
 		//NonCopyable
 		Invader(const Invader&) = delete;
 		//NonCopyable
 		void operator=(const Invader&) = delete;
+		~Invader();
 	};
 }

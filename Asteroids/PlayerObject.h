@@ -31,5 +31,6 @@ namespace sim {
 		PlayerObject(const PlayerObject&) = delete;
 		//NonCopyable
 		void operator=(const PlayerObject&) = delete;
+		~PlayerObject();
 	};
 }

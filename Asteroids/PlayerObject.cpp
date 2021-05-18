@@ -118,3 +118,8 @@ void PlayerObject::Kill() {
 	GameObject::Kill();
 	GetSim()->PlayerDestroyed();
 }
+
+PlayerObject::~PlayerObject() {
+	delete _collider;
+	delete weapon;
+}

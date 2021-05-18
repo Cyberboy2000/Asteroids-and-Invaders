@@ -1,6 +1,7 @@
 #include "Boardrig.h"
 #include "Unitrig.h"
 #include "GameObject.h"
+#include "Invader.h"
 #include <SFML/Graphics.hpp>
 
 using namespace client;
@@ -53,6 +54,18 @@ void Unitrig::DebugRender() {
 	};
 
 	_board->window->draw(line, 2, sf::Lines);
+
+	sim::Invader* invader = dynamic_cast<sim::Invader*>(_obj);
+
+	if (invader != 0) {
+		line[0] = sf::Vertex(_board->WorldToScreen(_obj->x, _obj->y), sf::Color(10, 255, 0, 127));
+
+		for (int i = 0; i < invader->aiForces->size(); i += 2) {
+			line[1] = sf::Vertex(_board->WorldToScreen(_obj->x + invader->aiForces->at(i), _obj->y + invader->aiForces->at(i + 1)), sf::Color(10, 255, 0, 127));
+
+			_board->window->draw(line, 2, sf::Lines);
+		}
+	}
 }
 
 Unitrig::~Unitrig() {

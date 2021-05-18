@@ -8,6 +8,7 @@ namespace StateManager {
 		std::vector<State*> states;
 		State* focused = nullptr;
 		sf::RenderWindow* _window;
+		float timeScale = 1;
 	}
 	
 	void Activate(State* state) {
@@ -62,6 +63,14 @@ namespace StateManager {
 		_window = window;
 	}
 
+	void SetTimeScale(float f) {
+		timeScale = f;
+	}
+
+	float GetTimeScale() {
+		return timeScale;
+	}
+
 	void OnException(const std::string& ex) {
 		std::string str = "Exception Thrown:\n" + ex;
 		printf(str.c_str());
@@ -102,7 +111,7 @@ namespace StateManager {
 					}
 				}
 
-				float deltaTime = clock.restart().asSeconds();
+				float deltaTime = clock.restart().asSeconds() * timeScale;
 				Input::Tick();
 
 				std::vector<State*> temp = states;

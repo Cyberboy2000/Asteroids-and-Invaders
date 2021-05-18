@@ -1,3 +1,5 @@
-Asteroids/Debug
-Asteroids/Release
-Asteroids/x64
+Asteroids/Debug/
+Asteroids/Release/
+Asteroids/x64/
+Asteroids/.vs/
+

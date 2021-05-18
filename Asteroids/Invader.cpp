@@ -18,7 +18,7 @@ void Invader::tick(float deltaTime) {
 	float v = 0;
 	float targetAngle = -10;
 	float bestTarget = INFINITY;
-	
+	aiForces->clear();
 
 	for (auto pair : GetSim()->gameObjects) {
 		GameObject* obj = pair.second;
@@ -32,6 +32,8 @@ void Invader::tick(float deltaTime) {
 
 			h += dx * factor;
 			v += dy * factor;
+			aiForces->push_back(dx * factor);
+			aiForces->push_back(dy * factor);
 
 			if (bestTarget > dist) {
 				bestTarget = dist;
@@ -42,6 +44,9 @@ void Invader::tick(float deltaTime) {
 			float dy = obj->y - y;
 			float dist = sqrtf(dx * dx + dy * dy);
 			float factor = fmaxf(1 - 0.002f * dist, 0);
+
+			aiForces->push_back(-dx * factor);
+			aiForces->push_back(-dy * factor);
 
 			h -= dx * factor;
 			v -= dy * factor;
@@ -133,6 +138,7 @@ Invader::Invader(int i, Game* sim) : GameObject::GameObject(i, sim) {
 	hp = 2;
 	maxHp = 2;
 	faction = invader;
+	aiForces = new std::vector<float>();
 	weapon = new InvaderLaser(this);
 	_collider = new Collider(this, 44, 1, 774, 0.1f);
 }
@@ -151,4 +157,10 @@ void Invader::Kill() {
 	if (player != nullptr && player->isValid()) {
 		player->score++;
 	}
+}
+
+Invader::~Invader() {
+	delete _collider;
+	delete aiForces;
+	delete weapon;
 }
