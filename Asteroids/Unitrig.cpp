@@ -60,11 +60,21 @@ void Unitrig::DebugRender() {
 	if (invader != 0) {
 		line[0] = sf::Vertex(_board->WorldToScreen(_obj->x, _obj->y), sf::Color(10, 255, 0, 127));
 
+		float x = 0;
+		float y = 0;
+
 		for (int i = 0; i < invader->aiForces->size(); i += 2) {
 			line[1] = sf::Vertex(_board->WorldToScreen(_obj->x + invader->aiForces->at(i), _obj->y + invader->aiForces->at(i + 1)), sf::Color(10, 255, 0, 127));
+			x += invader->aiForces->at(i);
+			y += invader->aiForces->at(i + 1);
 
 			_board->window->draw(line, 2, sf::Lines);
 		}
+
+		line[0] = sf::Vertex(_board->WorldToScreen(_obj->x, _obj->y), sf::Color(255, 15, 0, 127));
+		line[1] = sf::Vertex(_board->WorldToScreen(_obj->x + x, _obj->y + y), sf::Color(255, 15, 0, 127));
+
+		_board->window->draw(line, 2, sf::Lines);
 	}
 }
 

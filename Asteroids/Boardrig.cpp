@@ -39,6 +39,7 @@ client::Boardrig::~Boardrig() {
 	delete _bg;
 
 	Input::RemoveListener(this, sf::Keyboard::H);
+	Input::RemoveListener(this, sf::Keyboard::T);
 }
 
 void client::Boardrig::onSimEvent(const SimEvent ev) {
